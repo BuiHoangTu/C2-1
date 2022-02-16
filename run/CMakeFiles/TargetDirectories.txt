@@ -1,0 +1,3 @@
+/home/tu/Desktop/InYear2/ôn CK/B1/run/CMakeFiles/rebuild_cache.dir
+/home/tu/Desktop/InYear2/ôn CK/B1/run/CMakeFiles/edit_cache.dir
+/home/tu/Desktop/InYear2/ôn CK/B1/run/CMakeFiles/prog.dir
