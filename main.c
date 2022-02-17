@@ -93,18 +93,26 @@ void xuonghang(rbm_t data){
 	printData(data);
 }
 
-int main(int argv, char* argc[]){
-	//tao cay
-    rbm_t data = readfile("../BongDa.txt");
-	//hien thi
-	printData(data);
-	//tim kiem
-	timkiem(data);
-	//xuong hang
-	xuonghang(data);
+void menu(){
+	printf("Chon che do\n1.Doc file\n2.hien thi\n3.tim kiem\n4.loc danh sach\n5.In danh sach\n6.Thoat\n");
+}
 
-	//in ds
-	inFile("KetQua.txt",data);
+int main(int argv, char* argc[]){
+	int mode;
+	rbm_t data =NULL;
+	do{
+		menu();
+		scanf("%d",&mode);
+		switch(mode){
+			case 1:data = readfile("../BongDa.txt");break;
+			case 2:printData(data);break;
+			case 3:timkiem(data);break;
+			case 4:xuonghang(data);break;
+			case 5:inFile("KetQua.txt",data);break;
+			case 6:printf("exiting\n");
+
+		}
+	}while(mode!=6);
 
 	rbm_free(data);
 	
